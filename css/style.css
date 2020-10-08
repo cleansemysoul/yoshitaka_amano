@@ -1,0 +1,380 @@
+*{   
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    box-sizing: border-box;
+}
+    scroll-behavior: smooth;
+}
+a{
+    font-size: 1.8em;
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: coolvetica, sans-serif;
+    font-weight: 700;    
+    font-style: normal;
+}
+header img{
+    width: 100vw;
+    max-width: 100%;
+}
+.white{
+    color:white;
+}
+@media all and (min-width:1200px){
+    header img{
+        width: 15vw;
+        margin-bottom: 10vh;
+    }
+}
+h1{
+    font-size: 2.4em;
+    text-align: center;
+}
+h2{
+    font-size: 2.2em;
+}
+h3{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: coolvetica, sans-serif;
+    margin-top: 1.2vw;
+}
+h4{
+    font-size: 1.5em;
+    display: block;
+}
+p, label{
+    font-size: 1.3em;
+}
+h1, h2, p, label{
+    padding: 2vw;
+}
+header, h2, h3, h4{
+    text-align: center;
+}
+h3, h4{
+    padding-top: 2vh;
+}
+header li{
+    padding: 1vw 0;
+}
+nav a{
+    padding: 15px;
+}
+main a{
+    padding: 7px;
+}
+nav a:hover, nav a:focus{
+    transition-duration: .2s;
+    background-color: #111111;
+    color: white;
+}
+.insta img:hover{
+    transition-duration: 0.25s;
+    transform: scale(1.25);
+}
+.drapeau a{
+    padding: 15px;
+}
+.drapeau img{
+    width: 50px;
+    height: 30px;
+    margin-top: 2vw;
+}
+@media all and (min-width: 1200px) {
+    header{
+        position: fixed;
+        width: 20vw;
+        height: 100%;
+        padding: 10vh 2vw;
+        text-align: center;
+        border-right: 2px black solid;
+    }
+    header h1{
+        margin-bottom: 6vw;
+    }
+    main, footer{
+        margin-left: 20vw;
+    }
+    .insta img{
+        width: 40%;
+        margin-bottom:0;
+    }
+}
+.home{
+    height: 65vh;
+    background: url('../images/Yoshitaka.jpg') center no-repeat;
+    position: relative;
+    background-size: cover;
+}
+@media all and (min-width: 1200px){
+    .home{
+        height: 100vh;
+    }
+}
+#gallery, #collaborations, #store, #contact{
+    padding:7vh
+}
+.intro{
+    position: absolute;
+    top: 30vh;
+    font-size: 2em;
+    width: 100vw;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.8);
+}
+.center img{
+    display: block;
+    margin: auto;
+}
+#about{
+    padding-bottom: 1.5vw;
+}
+.about img{
+    max-width: 80vw;
+}
+@media all and (min-width:1200px){
+    .flex{
+        display:flex;
+    }
+    .height{
+        height: 100vh;
+    }
+    .center{
+        margin: auto;
+        align-items: center;
+    }
+    .about{
+        width: 80%;
+    }
+    .about img{
+        width: 60%;
+    }
+}
+.gallery,.collaborations{
+    text-align: center;
+}
+.gallery img{
+    max-width: 50vw;
+    max-height: 80vh;
+}
+@media all and (max-width:1200px){
+    .second-box{
+        position: relative;
+        color: white;
+    }
+    .second-box::before{
+        content:"";
+        position: absolute;
+        background-color: #111111;
+        bottom: -2vh;
+        width: 100vw;
+        height: 80%;
+        z-index: -1;
+        left: 0;
+    }
+    .paddingt{
+        padding-top: 10vw;
+    }
+    .insta img{
+        width: 10%;
+    }
+}
+@media all and (min-width:1200px){
+    .gallery img{
+        max-width: 20vw;
+    }
+    .gallery{
+        align-items: center;
+        color: white;
+    }
+    .odin{
+        position: relative;
+    }
+    .odin::before{
+        content:"";
+        position: absolute;
+        background-color: #111111;
+        bottom: -20vh;
+        width: 80vw;
+        height: 120%;
+        z-index: -1;
+        left: 0;
+    }
+    .ifrit{
+        padding: 0 2vw;
+    }
+}
+.gallery{
+    padding-bottom: 50px;
+}
+.more{
+    text-align: center;
+}
+.collaborations img, .store img, .contact img{
+    max-width: 80vw;
+    max-height: 700px;
+}
+@media all and (min-width:1200px){
+    .collaborations img, .store img, .contact img{
+        max-width: 35vw;
+    }
+}
+.third-box{
+    position: relative;
+    color: white;
+}
+.third-box::before{
+    content:"";
+    position: absolute;
+    background-color: #111111;
+    bottom: -2vh;
+    width: 100vw;
+    left: 0;
+    height: 70%;
+    z-index: -1;
+}
+@media all and (min-width:1200px){
+    .collaborations div,.store div{
+        width: 40%;
+        margin: auto;
+    }
+    .collaborations, .store{
+        color: white;
+    }
+    .third-box::before{
+        bottom: -10%;
+        height: 60%;
+        left: -4vw;
+        width: 80vw;
+    }
+}
+.store{
+    text-align: center;
+}
+.fourth-box{
+    position: relative;
+    color: white;
+}
+.fourth-box::before{
+    content:"";
+    position: absolute;
+    background-color: #111111;
+    bottom: -2vh;
+    width: 80vw;
+    left: 10vw;
+    height: 50%;
+    z-index: -1;
+}
+.description p{
+    padding: 0;
+}
+.description{
+    padding: 2vw 0;
+}
+@media all and (min-width:1200px){
+    .fourth-box::before{
+        bottom: -5vh;
+        height: 50vh;
+        left: -4vw;
+        width: 80vw;
+    }
+    .store img{
+        max-width: 35vw;
+        max-height: 70vh;
+    }
+    .store p{
+        padding: 0;
+    }
+}
+.contact{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+label{
+    color: white;
+    margin: 5vw;
+}
+.contact img{
+    margin: auto;
+    padding-bottom: 2vw;
+}
+.contact h3{
+    padding-bottom: 2vh;
+}
+input, textarea {
+    width: 95%;
+    padding: 1vw 2vw;
+    margin: 2vw 0;
+    box-sizing: border-box;
+    border: none;
+    font-size: 1.5em;
+}
+input[type=submit]{
+    color: black;
+    width: 35%;
+}
+.boxnoire{
+    position: relative;
+}
+.boxnoire::before{
+    content:"";
+    position: absolute;
+    background-color: #111111;
+    left: 0;
+    bottom: -5vh;
+    width: 100vw;
+    height: 90%;
+    z-index: -1;
+}
+@media all and (min-width:1200px){
+    input, textarea{
+        margin: 1vw 0;
+        padding: 1vw 0;
+    }
+    .boxnoire{
+        bottom: -5%;
+        width: 80vw;
+        height: 80%;
+    }
+}
+.about a, .gallery a, .collaborations a, .store a, .more a{
+    margin: 50px;
+    background-color: gray;
+    border-radius: 25px;
+}
+.bouton:hover, .bouton:focus{
+    transition-duration: .2s;
+    background-color: white;
+    color: red;
+}
+.bouton{
+    margin-top: 2vw;
+}
+body{
+    overflow-x: hidden
+}
+footer p{
+    padding: 1px;
+}
+footer{
+    padding-top: 50px;
+    font-size: 8px;
+    text-align: center;
+    color: gray;
+    background-color: #111;
+}
+@media all and (min-width:1200px){
+    footer{
+        left: 20vw;
+        font-size: 12px;
+    }
+}
